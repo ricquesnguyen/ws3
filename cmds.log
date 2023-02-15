@@ -1,0 +1,39 @@
+
+  354  find amazon_reviews_us_Books_v1_02.tsv 
+  355  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  356  ls
+  357  gunzip amazon_reviews_us_books_v1_02.tsv.gz
+  358  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+  359  ls
+  360  mv amazon_reviews_us_Books_v1_02.tsv cs131/ws3
+  361  cd cs131/ws3
+  362  ls
+  363  sort amazon_reviews_us_Books_v1_02.tsv
+  364  clear
+  365  ls
+  366  uniq -c amazon_reviews_us_Books_v1_02.tsv
+  367  clear
+  368  uniq -wls
+  369  ls
+  370  uniq -w 8 amazon_reviews_us_Books_v1_02.tsv
+  371  clear
+  372  ls
+  373  cut -c 1-10 amazon_reviews_us_Books_v1_02.tsv
+  374  clear
+  375  cut -c 3-11 amazon_reviews_us_Books_v1_02.tsv
+  376  uniq -w 8 amazon_reviews_us_Books_v1_02.tsv
+  377  clear
+  378  cut -c 3-11 amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c
+  379  cut -c 3-11 amazon_reviews_us_Books_v1_02.tsv | uniq -c|sort -nr
+  380  cut -c 3-11 amazon_reviews_us_Books_v1_02.tsv | uniq -c|sort -nr| head -3
+  381  cut -c 3-11 amazon_reviews_us_Books_v1_02.tsv | uniq -c|sort -nr| head -3 > ws3.txt
+  382  cut -c 28-37 amazon_reviews_us_Books_v1_02.tsv | uniq -c|sort -nr| head -3 > ws3.txt
+  383  ls
+  384  vi ws3.txt
+  385  cut -c 3-11 amazon_reviews_us_Books_v1_02.tsv | uniq -c|sort -nr| head -3 >> ws3.txt
+  386  vi ws3.txt
+  387  vim ws3.txt
+  388  vi ws3.txt
+  389  history > cmds.log
+  390  vi cmds.log
+  391  history > cmds.log

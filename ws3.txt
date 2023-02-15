@@ -1,0 +1,11 @@
+
+These are the top 3 products after using  cut -c 28-37 amazon_reviews_us_Books_v1_02.tsv | uniq -c|sort -nr| head -3 
+      9 0439139597
+      9 0439139597
+      7 043935806X
+These are the top 3 customer who reviewed after using cut -c 3-11 amazon_reviews_us_Books_v1_02.tsv | uniq -c|sort -nr| head -3
+ 
+      6 	52948753
+      6 	45041039
+      5 	50732546
+Both are sorted by count, then product/customer id
